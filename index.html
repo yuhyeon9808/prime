@@ -12,15 +12,669 @@
       sizes="180x180"
       href="./apple-touch-icon.png"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="./favicon_32.png" />
+    <link rel="icon" type="image/png" sizes="42x42" href="./favicon_42.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon_16.png" />
 
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./src/css/output.css" />
+
+    <!-- script -->
+    <script src="/src/js/layout.js" defer></script>
   </head>
   <body>
     <div>
-      <header class="font-bold text-amber-800">안녀</header>
+      <!-- pc header -->
+      <header class="w-full fixed top-0 left-0 z-40 group hidden 1440:block">
+        <div
+          class="w-full px-[50px] h-[80px] flex justify-center items-center border-b border-border-gray relative z-20"
+        >
+          <div class="w-1440 flex justify-between items-center h-full">
+            <!-- logo -->
+            <h1>
+              <a href="#">
+                <img src="/src/assets/images/logo.png" alt="프라임 치과" />
+              </a>
+            </h1>
+
+            <!-- nav -->
+            <nav class="w-[1000px] h-full">
+              <ul
+                class="w-full h-full grid grid-cols-6 font-semibold text-center items-center"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-text-deep transition-colors"
+                    >병원 소개</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-text-deep transition-colors"
+                    >임플란트/틀니</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-text-deep transition-colors"
+                    >치아 교정</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-text-deeptransition-colors"
+                    >심미치료</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-text-deep transition-colors"
+                    >자연 치아 살리기</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block hover:text-text-deep transition-colors"
+                    >커뮤니티</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- login btn -->
+            <a href="#" class="hover:opacity-70 transition-opacity block p-4">
+              <svg
+                xmlns="http://www.w4.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="#1a1a1a"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-user-round"
+              >
+                <circle cx="12" cy="8" r="5" />
+                <path d="M20 21a8 8 0 0 0-16 0" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <!-- 투뎁스 메뉴 -->
+        <div
+          class="hidden absolute top-[80px] left-0 w-full bg-[#f8f8f8] border-b border-border-gray shadow-sm group-hover:block z-10"
+        >
+          <div class="w-1440 mx-auto pl-[184px] pr-[98px]">
+            <div class="w-[1000px] py-12 mx-auto">
+              <div class="grid grid-cols-6 text-center">
+                <ul class="flex flex-col gap-4 border-l border-gray-200">
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >인사말 및 철학</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >의료진 소개</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >병원 둘러보기</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >디지털 장비</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                    >
+                      오시는 길</a
+                    >
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-4 border-l border-gray-200">
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >최소 절개 임플란트</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >디지털 임플란트 보철</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >임플란트 종류</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >임플란트 틀니</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >틀니 치료</a
+                    >
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-4 border-l border-gray-200">
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >교정 장치 종류</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >돌출 입 교정</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >덧니 교정</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >어린이 성장 교정</a
+                    >
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-4 border-l border-gray-200">
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >디지털 보철</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >올 세라믹</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >라미네이트</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >앞니 레진 치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >치아 미백</a
+                    >
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-4 border-l border-gray-200">
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >충치 치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >신경치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >보철 치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >치주치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >사랑니 발치</a
+                    >
+                  </li>
+                </ul>
+                <ul class="flex flex-col gap-4 border-x border-gray-200">
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >프라임 소식</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >언론 보도</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >치료 후기</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="font-normal text-text-muted hover:text-text"
+                      >치료 전 후</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- 1440 이하 header -->
+      <header
+        class="w-full h-[60px] bg-bg border-b border-border-gray flex justify-between items-center md:px-[50px] px-[10px] fixed top-0 left-0 z-40 1440:hidden"
+      >
+        <!-- menu btn -->
+        <button
+          id="menu-open"
+          class="hover:opacity-70 transition-opacity block p-4"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1a1a1a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-menu-icon lucide-menu"
+          >
+            <path d="M4 5h16" />
+            <path d="M4 12h16" />
+            <path d="M4 19h16" />
+          </svg>
+        </button>
+
+        <!-- logo -->
+        <h1>
+          <a href="#">
+            <img src="/src/assets/images/logo.png" alt="프라임 치과" />
+          </a>
+        </h1>
+
+        <!-- login btn -->
+        <a href="#" class="hover:opacity-70 transition-opacity block p-4">
+          <svg
+            xmlns="http://www.w4.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="#1a1a1a"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-user-round"
+          >
+            <circle cx="12" cy="8" r="5" />
+            <path d="M20 21a8 8 0 0 0-16 0" />
+          </svg>
+        </a>
+      </header>
+
+      <!-- 햄버거 메뉴 -->
+      <div
+        id="side-menu"
+        class="w-[360px] h-screen h-dvh fixed top-0 left-0 bg-bg translate-x-[-360px] transition-all duration-300 cursor-pointer border-r border-border-gray z-50"
+      >
+        <nav>
+          <div class="p-6 flex justify-end items-center">
+            <button id="menu-close" class="p-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M18 6 6 18" />
+                <path d="m6 6 12 12" />
+              </svg>
+            </button>
+          </div>
+
+          <ul class="flex flex-col pb-20">
+            <li>
+              <details class="menu">
+                <summary
+                  class="px-5 py-4 font-semibold title list-none cursor-pointer"
+                >
+                  병원 소개
+                </summary>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >인사말 및 철학</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >의료진 소개</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >병원 둘러보기</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >디지털 장비</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >오시는 길</a
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="menu">
+                <summary
+                  class="px-5 py-4 font-semibold title list-none cursor-pointer"
+                >
+                  임플란트/틀니
+                </summary>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >최소 절개 임플란트</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >디지털 임플란트 보철</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >임플란트 종류</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >임플란트 틀니</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >틀니 치료</a
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="menu">
+                <summary
+                  class="px-5 py-4 font-semibold list-none cursor-pointer"
+                >
+                  치아 교정
+                </summary>
+                <ul class="title">
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >교정 장치 종류</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >돌출 입 교정</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >덧니 교정</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >어린이 성장 교정</a
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="menu">
+                <summary
+                  class="px-5 py-4 font-semibold list-none cursor-pointer"
+                >
+                  심미치료
+                </summary>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >디지털 보철</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >올 세라믹</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >라미네이트</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >앞니 레진 치료</a
+                    >
+                  </li>
+                  <li>
+                    <a href="#" class="block px-8 py-3 hover:bg-gray-50"
+                      >치아 미백</a
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="menu">
+                <summary
+                  class="px-5 py-4 font-semibold title list-none cursor-pointer"
+                >
+                  자연 치아 살리기
+                </summary>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >충치 치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >신경치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >보철 치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >치주치료</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >사랑니 발치</a
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+
+            <li>
+              <details class="menu">
+                <summary
+                  class="px-5 py-4 font-semibold title list-none cursor-pointer"
+                >
+                  커뮤니티
+                </summary>
+                <ul>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >프라임 소식</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >언론 보도</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >치료 후기</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="block px-8 py-3 hover:bg-gray-50 text-text-muted"
+                      >치료 전 후</a
+                    >
+                  </li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </div>
   </body>
 </html>

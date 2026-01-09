@@ -15,6 +15,7 @@
 
   /* UI */
   --color-btn-disabled: #ededed; /* 비활성 버튼 (Before/After) */
+  --color-border-gray: #d9d9d9;
 
   /* Brand */
   --color-brand: #66b5d5;
@@ -26,6 +27,10 @@
   --color-placeholder: #8e8989; /* placeholder */
 
   --font-ibm: 'IBM Plex Sans', sans-serif;
+
+  /* 디자인 기준 */
+  --spacing-1440: 1440px;
+  --breakpoint-1440: 1440px;
 }
 
 body {
