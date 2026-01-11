@@ -18,17 +18,31 @@
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="./src/css/output.css" />
 
+    <!-- swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
     <!-- script -->
     <script src="/src/js/layout.js" defer></script>
+    <script src="/src/js/index.js" defer></script>
   </head>
   <body>
     <div>
       <!-- pc header -->
-      <header class="w-full fixed top-0 left-0 z-40 group hidden 1440:block">
+      <header
+        class="w-full bg-bg fixed top-0 left-0 z-40 group hidden 1440:block"
+      >
         <div
-          class="w-full px-[50px] h-[80px] flex justify-center items-center border-b border-border-gray relative z-20"
+          class="w-full h-[80px] flex justify-center items-center border-b border-border-gray relative z-20"
         >
-          <div class="w-1440 flex justify-between items-center h-full">
+          <div
+            class="w-1440 px-[50px] flex justify-between items-center h-full"
+          >
             <!-- logo -->
             <h1>
               <a href="#">
@@ -109,7 +123,7 @@
         <div
           class="hidden absolute top-[80px] left-0 w-full bg-[#f8f8f8] border-b border-border-gray shadow-sm group-hover:block z-10"
         >
-          <div class="w-1440 mx-auto pl-[184px] pr-[98px]">
+          <div class="inner pl-[183px] pr-[98px]">
             <div class="w-[1000px] py-12 mx-auto">
               <div class="grid grid-cols-6 text-center">
                 <ul class="flex flex-col gap-4 border-l border-gray-200">
@@ -675,6 +689,231 @@
           </ul>
         </nav>
       </div>
+
+      <!-- 메인 -->
+      <main>
+        <!-- 슬라이드 섹션 -->
+        <section>
+          <!-- Slider main container -->
+          <div class="swiper main-slide w-full h-[700px] mt-[80px]">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper w-full h-[700px]">
+              <!-- Slides 1 -->
+              <div
+                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_1.png)] bg-cover bg-center"
+              >
+                <div class="slide-inner">
+                  <div
+                    class="text-bg max-w-[350px] absolute top-[50%] translate-y-[-50%]"
+                  >
+                    <p class="slide-title">진료는 <br />원칙에서 시작됩니다</p>
+                    <hr class="block my-[30px]" />
+                    <p class="leading-9 text-24">
+                      불필요한 치료는 하지 않습니다<br />과정과 기준을 지키는
+                      프라임 치과
+                    </p>
+                    <a href="#" class="link-btn">상담 예약하기&nbsp;→</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 2 -->
+              <div
+                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_2.png)] bg-cover bg-center"
+              >
+                <div class="slide-inner">
+                  <div
+                    class="text-bg max-w-[440px] absolute top-[50%] translate-y-[-50%]"
+                  >
+                    <p class="slide-title">
+                      과정이 투명해야<br />결과도 신뢰할 수 있습니다
+                    </p>
+                    <hr class="block my-[30px]" />
+                    <p class="leading-9 text-24">
+                      진단 · 계획 · 치료 · 사후관리<br />모든 단계는 기록되고
+                      설명됩니다.
+                    </p>
+                    <a href="#" class="link-btn">진료 시스템 보기 &nbsp;→</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 3 -->
+              <div
+                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_3.png)] bg-cover bg-center"
+              >
+                <div class="slide-inner">
+                  <div
+                    class="text-bg max-w-[440px] absolute top-[50%] translate-y-[-50%]"
+                  >
+                    <p class="slide-title">
+                      정확한 진단이<br />치료의 기준이 됩니다
+                    </p>
+                    <hr class="block my-[30px]" />
+                    <p class="leading-9 text-24">
+                      정밀 장비와 기준에 따른 진단<br />치료의 시작부터 다른
+                      프라임 치과
+                    </p>
+                    <a href="#" class="link-btn">정밀 진단 시스템 &nbsp;→</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 4 -->
+              <div
+                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_4.png)] bg-cover bg-center"
+              >
+                <div class="slide-inner">
+                  <div
+                    class="text-bg max-w-[440px] absolute top-[50%] translate-y-[-50%]"
+                  >
+                    <p class="slide-title">
+                      프라임 치과 <br />분야 별 전문 의료진
+                    </p>
+                    <hr class="block my-[30px]" />
+                    <p class="leading-9 text-24">
+                      분야별 전문 의료진이 진단부터<br />치료까지 책임지고
+                      함께합니다.
+                    </p>
+                    <a href="#" class="link-btn">의료진 소개 &nbsp;→</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </section>
+
+        <!-- 시스템 소개 섹션 -->
+        <section class="inner px-[95px] py-[110px]">
+          <div class="mb-[50px]">
+            <span class="text-brand text-20">PRIME PRECISION SYSTEM</span>
+            <p class="text-brand-deep text-40 font-bold leading-12">
+              프라임치과 분야 별<br />정밀 진단 · 치료 시스템
+            </p>
+          </div>
+          <!-- Slider main container -->
+          <div class="swiper system-slide w-full">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper w-full h-full">
+              <!-- Slides 1 -->
+              <div
+                class="swiper-slide w-full border border-border-gray rounded-md"
+              >
+                <div class="flex">
+                  <img
+                    src="/src/assets/images/section2_slide_1.png"
+                    alt="3D CT · 디지털 구강 스캐너"
+                    class="w-[632px]"
+                  />
+                  <div class="flex-1 flex flex-col justify-center items-center">
+                    <div>
+                      <span
+                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        >01</span
+                      >
+                      <p class="font-semibold text-32 pb-[10px]">
+                        3D CT · 디지털<br />구강 스캐너
+                      </p>
+                      <p class="text-24 text-text-muted pb-[30px]">
+                        3D CT와 디지털 구강 스캐너를 통해<br />치아·턱뼈·신경
+                        위치를 입체적으로 분석합니다.
+                      </p>
+                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 2 -->
+              <div
+                class="swiper-slide w-full border border-border-gray rounded-md"
+              >
+                <div class="flex">
+                  <img
+                    src="/src/assets/images/section2_slide_2.png"
+                    alt="AI 기반 정밀 진단 시스템"
+                    class="w-[632px]"
+                  />
+                  <div class="flex-1 flex flex-col justify-center items-center">
+                    <div>
+                      <span
+                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        >02</span
+                      >
+                      <p class="font-semibold text-32 pb-[10px]">
+                        AI 기반<br />정밀 진단 시스템
+                      </p>
+                      <p class="text-24 text-text-muted pb-[30px]">
+                        AI 분석을 통해 교합, 치아 배열, 잇몸 상태를<br />
+                        객관적인 수치로 확인합니다.
+                      </p>
+                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 3 -->
+              <div
+                class="swiper-slide w-full border border-border-gray rounded-md"
+              >
+                <div class="flex">
+                  <img
+                    src="/src/assets/images/section2_slide_3.png"
+                    alt="치료 전 사전 시뮬레이션"
+                    class="w-[632px]"
+                  />
+                  <div class="flex-1 flex flex-col justify-center items-center">
+                    <div>
+                      <span
+                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        >03</span
+                      >
+                      <p class="font-semibold text-32 pb-[10px]">
+                        치료 전<br />사전 시뮬레이션
+                      </p>
+                      <p class="text-24 text-text-muted pb-[30px]">
+                        교정·보철·임플란트 치료 전<br />
+                        디지털 시뮬레이션으로 결과를 예측합니다.
+                      </p>
+                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Slides 4 -->
+              <div
+                class="swiper-slide w-full border border-border-gray rounded-md"
+              >
+                <div class="flex">
+                  <img
+                    src="/src/assets/images/section2_slide_4.png"
+                    alt="단계별 멸균·위생 관리 시스템"
+                    class="w-[632px]"
+                  />
+                  <div class="flex-1 flex flex-col justify-center items-center">
+                    <div>
+                      <span
+                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        >04</span
+                      >
+                      <p class="font-semibold text-32 pb-[10px]">
+                        단계별<br />멸균·위생 관리 시스템
+                      </p>
+                      <p class="text-24 text-text-muted pb-[30px]">
+                        진료 기구는 사용 후 즉시 세척 과정을 거친 뒤
+                        <br />
+                        소독·멸균 시스템을 통해 단계별로 관리됩니다.
+                      </p>
+                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex justify-end gap-[15px]">
+              <div class="swiper-button-prev system-prev"></div>
+              <div class="swiper-button-next system-next"></div>
+            </div>
+          </div>
+        </section>
+      </main>
     </div>
   </body>
 </html>

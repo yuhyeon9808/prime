@@ -28,6 +28,11 @@
 
   --font-ibm: 'IBM Plex Sans', sans-serif;
 
+  --text-40: 40px;
+  --text-32: 32px;
+  --text-24: 24px;
+  --text-20: 20px;
+
   /* 디자인 기준 */
   --spacing-1440: 1440px;
   --breakpoint-1440: 1440px;
@@ -37,4 +42,64 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-ibm);
+}
+
+@layer components {
+  /* slide components */
+  .slide-title {
+    @apply text-40 font-semibold;
+  }
+
+  .link-btn {
+    @apply block mt-[45px] text-end font-semibold text-20;
+  }
+
+  /* width components */
+  .inner {
+    @apply w-1440 mx-auto;
+  }
+
+  .slide-inner {
+    @apply w-1440 mx-auto pl-[183px];
+  }
+}
+
+/* 메인 슬라이드 */
+.main-slide .swiper-pagination {
+  margin-bottom: 30px;
+}
+
+.main-slide .swiper-pagination-bullet {
+  background-color: var(--color-border-gray) !important;
+  opacity: 1 !important;
+}
+
+.main-slide .swiper-pagination-bullet-active {
+  width: 55px !important;
+  border-radius: 16px !important;
+  background-color: var(--color-brand) !important;
+}
+
+/* 시스템 슬라이드 */
+
+.system-slide {
+  overflow-x: hidden;
+}
+
+.system-slide .swiper-wrapper {
+  margin-bottom: 20px;
+}
+
+.system-slide .swiper-button-prev,
+.system-slide .swiper-button-next {
+  color: var(--color-text);
+  opacity: 1;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--color-text);
+  border-radius: 100%;
+  padding: 10px 0px;
+  position: static !important;
+  right: 0;
+  margin-top: 0 !important;
 }
