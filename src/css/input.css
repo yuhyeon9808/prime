@@ -34,6 +34,7 @@
   --text-24: 24px;
   --text-20: 20px;
   --text-16: 16px;
+  --text-14: 14px;
 
   /* 디자인 기준 */
   --spacing-1440: 1440px;
@@ -50,53 +51,45 @@ body {
 @layer components {
   /* slide components */
   .slide-title {
-    /* 1. 기본 스타일 */
-    @apply text-24 font-semibold;
-
-    /* 2. 중간 크기 (md: 768px~): */
-    @media (min-width: 768px) {
-      @apply text-32 font-semibold;
-    }
-
-    /* 3. 1440px 이상 */
-    @media (min-width: 1440px) {
-      @apply text-40 font-semibold;
-    }
-  }
-}
-
-.link-btn {
-  /* 1. 기본 스타일 */
-  @apply block mt-[25px] text-end font-semibold text-16;
-
-  /* 2. 중간 크기 (md: 768px~): */
-  @media (min-width: 768px) {
-    @apply block mt-[30px] text-end font-semibold text-16;
+    @apply font-semibold
+         text-24
+         md:text-32
+         1440:text-40;
   }
 
-  /* 3. 1440px 이상 */
-  @media (min-width: 1440px) {
-    @apply block mt-[45px] text-end font-semibold text-20;
-  }
-}
-
-/* width components */
-.inner {
-  @apply w-1440 mx-auto;
-}
-
-.slide-inner {
-  /* 1. 기본 스타일 */
-  @apply flex justify-center;
-
-  /* 2. 중간 크기 (md: 768px~): */
-  @media (min-width: 768px) {
-    @apply block ml-[50px];
+  .link-btn {
+    @apply block text-end font-semibold
+         mt-[25px] text-16
+         md:mt-[30px]
+         1440:mt-[45px] 1440:text-20;
   }
 
-  /* 3. 1440px 이상 */
-  @media (min-width: 1440px) {
-    @apply max-w-1440 mx-auto pl-[183px] ml-auto;
+  /* width components */
+  .inner {
+    @apply max-w-1440  mx-auto;
+  }
+
+  .slide-inner {
+    @apply flex justify-center
+    md:block md:ml-[50px]
+    1440:max-w-1440 1440:mx-auto 1440:pl-[183px] 1440:ml-auto;
+  }
+
+  .tap-btn {
+    @apply w-[150px] py-3 bg-btn-disabled rounded-3xl text-text-muted font-semibold text-16;
+  }
+
+  .tab-panel {
+    @apply col-start-1 row-start-1
+         flex flex-col 1440:flex-row
+         gap-[30px] justify-center items-center
+         opacity-0 translate-y-2
+         transition-all duration-300 ease-out
+         pointer-events-none;
+  }
+
+  .tab-panel.active {
+    @apply opacity-100 translate-y-0 pointer-events-auto;
   }
 }
 
@@ -138,4 +131,8 @@ body {
   position: static !important;
   right: 0;
   margin-top: 0 !important;
+}
+
+.tap-btn.active {
+  @apply bg-brand text-bg;
 }

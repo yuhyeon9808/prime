@@ -46,3 +46,22 @@ const equipmentSwiper = new Swiper('.slide-equipment', {
     delay: 1000,
   },
 });
+
+// tap
+const buttonWrap = document.querySelector('.button-wrap');
+const panels = document.querySelectorAll('.img-wrap .tab-panel');
+
+buttonWrap.addEventListener('click', (e) => {
+  const btn = e.target.closest('.tap-btn');
+  if (!btn) return;
+
+  // 버튼 active
+  buttonWrap.querySelector('.tap-btn.active')?.classList.remove('active');
+  btn.classList.add('active');
+
+  // 패널 active
+  const tab = btn.dataset.tab;
+  panels.forEach((p) => {
+    p.classList.toggle('active', p.dataset.panel === tab);
+  });
+});

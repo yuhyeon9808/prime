@@ -943,10 +943,12 @@
         >
           <div class="z-20">
             <div class="pb-[65px] text-center">
-              <p class="text-36 font-semibold pb-[30px]">
+              <p
+                class="1440:text-36 md:text-32 text-24 font-semibold md:pb-[30px] pb-[15px]"
+              >
                 프라임 치과의 최첨단 장비
               </p>
-              <p class="text-text-muted leading-8">
+              <p class="text-text-muted sm:leading-8 sm:text-16 text-14">
                 대학 병원급 장비로 더 정밀하게 진료합니다. <br />환자분들의 치아
                 건강을 위한 프라임 치과의 자신감입니다.
               </p>
@@ -1031,7 +1033,7 @@
         <section
           class="bg-bg-medical w-full h-auto lg:py-[130px] md:py-[100px] py-[70px]"
         >
-          <div class="1440:inner w-full">
+          <div class="inner">
             <div class="text-center pb-[50px]">
               <p
                 class="text-brand-deep font-semibold lg:text-40 md:text-32 text-24"
@@ -1094,7 +1096,138 @@
             </div>
           </div>
         </section>
+
+        <!-- 비포 애프터 섹션-->
+        <section class="w-full lg:py-[70px] py-[50px]">
+          <div
+            class="1440:inner w-full flex flex-col items-center 1440:px-[100px] md:px-[50px] px-[20px]"
+          >
+            <div class="text-center">
+              <p
+                class="text-brand-deep font-semibold lg:text-40 md:text-32 text-24 mb-[15px]"
+              >
+                Prime<br />Before & After
+              </p>
+              <p class="text-text-muted md:text-20 text-16 mb-[35px]">
+                프라임의 드라마틱한 비포 & 애프터와 함께 하세요.
+              </p>
+            </div>
+            <!-- tab -->
+            <div
+              class="button-wrap grid lg:grid-cols-4 grid-cols-2 gap-[25px] mb-[50px]"
+            >
+              <button class="tap-btn active" data-tab="implant">
+                임플란트 / 틀니
+              </button>
+              <button class="tap-btn" data-tab="orthodontic">치아 교정</button>
+              <button class="tap-btn" data-tab="aesthetic">심미 치료</button>
+              <button class="tap-btn" data-tab="preserve">
+                자연 치아 살리기
+              </button>
+            </div>
+
+            <!-- img -->
+            <div class="img-wrap grid w-full">
+              <!-- 임플란트 -->
+              <div class="tab-panel active" data-panel="implant">
+                <img
+                  src="/src/assets/images/implant_before.png"
+                  alt="임플란트 비포"
+                />
+                <img
+                  src="/src/assets/images/implant_after.png"
+                  alt="임플란트 애프터"
+                />
+              </div>
+
+              <!-- 치아교정 -->
+              <div class="tab-panel" data-panel="orthodontic">
+                <img
+                  src="/src/assets/images/orthodontics_before.png"
+                  alt="치아교정 비포"
+                />
+                <img
+                  src="/src/assets/images/orthodontics_after.png"
+                  alt="치아교정  애프터"
+                />
+              </div>
+
+              <!-- 심미치료 -->
+              <div class="tab-panel" data-panel="aesthetic">
+                <img
+                  src="/src/assets/images/aesthetic_treatment_before.png"
+                  alt="심미치료 비포"
+                />
+                <img
+                  src="/src/assets/images/aesthetic_treatment_after.png"
+                  alt="심미치료   애프터"
+                />
+              </div>
+
+              <!--자연치아 살리기-->
+              <div class="tab-panel" data-panel="preserve">
+                <img
+                  src="/src/assets/images/save_theeth_before.png"
+                  alt="자연치아 살리기 비포"
+                />
+                <img
+                  src="/src/assets/images/save_theeth_after.png"
+                  alt="자연치아 살리기 애프터"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
+
+      <!-- footer-->
+      <footer class="w-full bg-footer-bg py-[60px]">
+        <div
+          class="inner 1440:px-[150px] w-full md:px-[100px] px-[50px] flex lg:flex-row flex-col lg:gap-0 gap-[30px] justify-between"
+        >
+          <div>
+            <div>
+              <span class="block text-bg text-24 font-semibold">상담 문의</span>
+              <span class="block text-brand text-24 font-semibold mb-[30px]"
+                >02-1717-8282</span
+              >
+            </div>
+
+            <div>
+              <span class="block text-bg text-24 font-semibold">진료 시간</span>
+              <div class="mt-[25px] flex flex-col gap-[15px] min-w-[220px]">
+                <div class="text-bg w-full flex justify-between">
+                  <span class="font-semibold">평일</span>
+                  <span>10:00 - 19:00</span>
+                </div>
+                <div class="text-bg w-full flex justify-between">
+                  <span class="font-semibold">토요일</span>
+                  <span>9:00 - 13:00</span>
+                </div>
+                <div class="text-bg w-full flex justify-between">
+                  <span class="font-semibold">점심시간</span>
+                  <span>13:00 - 14:00</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <span class="block text-bg text-24 font-semibold">오시는 길</span>
+            <span class="block text-bg text-16 mt-[15px] mb-[25px]"
+              >서울 특별시 강서구 화곡로 342 1층 프라임 치과</span
+            >
+
+            <div class="max-w-[460px] h-[180px] overflow-hidden">
+              <iframe
+                src="https://www.google.com/maps?q=서울특별시%20강서구%20화곡로%20342&output=embed"
+                class="w-full h-full border-0"
+                loading="lazy"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
