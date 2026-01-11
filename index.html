@@ -1181,7 +1181,7 @@
       </main>
 
       <!-- footer-->
-      <footer class="w-full bg-footer-bg py-[60px]">
+      <footer class="w-full bg-footer-bg py-[60px] xl:mb-[70px]">
         <div
           class="inner 1440:px-[150px] w-full md:px-[100px] px-[50px] flex lg:flex-row flex-col lg:gap-0 gap-[30px] justify-between"
         >
@@ -1228,6 +1228,36 @@
           </div>
         </div>
       </footer>
+
+      <!--상담신청바-->
+      <div
+        class="xl:flex hidden bg-bar-bg w-full h-[70px] fixed bottom-0 items-center opacity-90 z-50"
+      >
+        <div
+          class="inner 1440:w-[1440px] 1440:px-[150px] w-full px-[100px] flex justify-between items-center"
+        >
+          <div>
+            <span class="text-18 text-bg font-semibold mr-[50px]"
+              >빠른 상담 신청</span
+            >
+            <input
+              type="text"
+              placeholder="이름"
+              class="bg-bg h-[26px] pl-[10px] text-14 mr-[15px]"
+            />
+            <input
+              type="text"
+              placeholder="연락처"
+              class="bg-bg h-[26px] pl-[10px] text-14"
+            />
+          </div>
+          <button
+            class="bg-brand text-bg w-[150px] py-1 font-semibold rounded-sm"
+          >
+            상담 신청
+          </button>
+        </div>
+      </div>
     </div>
   </body>
 </html>

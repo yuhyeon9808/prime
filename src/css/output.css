@@ -397,6 +397,7 @@
     --text-32: 32px;
     --text-24: 24px;
     --text-20: 20px;
+    --text-18: 18px;
     --text-16: 16px;
     --text-14: 14px;
     --spacing-1440: 1440px;
@@ -620,6 +621,9 @@
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
   .bottom-\[-60px\] {
     bottom: -60px;
   }
@@ -773,6 +777,15 @@
   .mt-\[60px\] {
     margin-top: 60px;
   }
+  .mt-\[70px\] {
+    margin-top: 70px;
+  }
+  .mr-\[15px\] {
+    margin-right: 15px;
+  }
+  .mr-\[50px\] {
+    margin-right: 50px;
+  }
   .mb-\[15px\] {
     margin-bottom: 15px;
   }
@@ -787,6 +800,9 @@
   }
   .mb-\[50px\] {
     margin-bottom: 50px;
+  }
+  .mb-\[70px\] {
+    margin-bottom: 70px;
   }
   .box-border {
     box-sizing: border-box;
@@ -875,6 +891,15 @@
   .aspect-square {
     aspect-ratio: 1 / 1;
   }
+  .h-\[26px\] {
+    height: 26px;
+  }
+  .h-\[70px\] {
+    height: 70px;
+  }
+  .h-\[80px\] {
+    height: 80px;
+  }
   .h-\[100px\] {
     height: 100px;
   }
@@ -889,9 +914,6 @@
   }
   .h-\[60px\] {
     height: 60px;
-  }
-  .h-\[80px\] {
-    height: 80px;
   }
   .h-\[635px\] {
     height: 635px;
@@ -935,6 +957,9 @@
   .w-\[100px\] {
     width: 100px;
   }
+  .w-\[150px\] {
+    width: 150px;
+  }
   .w-\[250px\] {
     width: 250px;
   }
@@ -943,6 +968,9 @@
   }
   .w-\[360px\] {
     width: 360px;
+  }
+  .w-\[1440px\] {
+    width: 1440px;
   }
   .w-full {
     width: 100%;
@@ -1512,6 +1540,9 @@
   .rounded-md {
     border-radius: var(--radius-md);
   }
+  .rounded-sm {
+    border-radius: var(--radius-sm);
+  }
   .rounded-s {
     border-start-start-radius: 0.25rem;
     border-end-start-radius: 0.25rem;
@@ -1648,6 +1679,9 @@
   .bg-\[var\(--my_variable\)\] {
     background-color: var(--my_variable);
   }
+  .bg-bar-bg {
+    background-color: var(--color-bar-bg);
+  }
   .bg-bg {
     background-color: var(--color-bg);
   }
@@ -1662,6 +1696,9 @@
   }
   .bg-bg\/70 {
     background-color: color-mix(in oklab, var(--color-bg) 70%, transparent);
+  }
+  .bg-brand {
+    background-color: var(--color-brand);
   }
   .bg-footer-bg {
     background-color: var(--color-footer-bg);
@@ -1886,6 +1923,21 @@
   .px-\[50px\] {
     padding-inline: 50px;
   }
+  .px-\[100px\] {
+    padding-inline: 100px;
+  }
+  .px-\[150px\] {
+    padding-inline: 150px;
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
+  .py-1\.5 {
+    padding-block: calc(var(--spacing) * 1.5);
+  }
+  .py-2 {
+    padding-block: calc(var(--spacing) * 2);
+  }
   .py-3 {
     padding-block: calc(var(--spacing) * 3);
   }
@@ -1936,6 +1988,9 @@
   }
   .pb-\[65px\] {
     padding-bottom: 65px;
+  }
+  .pl-\[10px\] {
+    padding-left: 10px;
   }
   .pl-\[183px\] {
     padding-left: 183px;
@@ -1988,6 +2043,9 @@
   .text-16 {
     font-size: var(--text-16);
   }
+  .text-18 {
+    font-size: var(--text-18);
+  }
   .text-20 {
     font-size: var(--text-20);
   }
@@ -1996,10 +2054,6 @@
   }
   .text-\[128px\] {
     font-size: 128px;
-  }
-  .leading-8 {
-    --tw-leading: calc(var(--spacing) * 8);
-    line-height: calc(var(--spacing) * 8);
   }
   .leading-10 {
     --tw-leading: calc(var(--spacing) * 10);
@@ -2253,6 +2307,9 @@
   }
   .scheme-only-light {
     color-scheme: only light;
+  }
+  .opacity-90 {
+    opacity: 90%;
   }
   .mix-blend-plus-darker {
     mix-blend-mode: plus-darker;
@@ -2764,11 +2821,6 @@
       padding-bottom: 30px;
     }
   }
-  .md\:text-16 {
-    @media (width >= 48rem) {
-      font-size: var(--text-16);
-    }
-  }
   .md\:text-20 {
     @media (width >= 48rem) {
       font-size: var(--text-20);
@@ -2777,12 +2829,6 @@
   .md\:text-32 {
     @media (width >= 48rem) {
       font-size: var(--text-32);
-    }
-  }
-  .md\:leading-8 {
-    @media (width >= 48rem) {
-      --tw-leading: calc(var(--spacing) * 8);
-      line-height: calc(var(--spacing) * 8);
     }
   }
   .lg\:flex {
@@ -2838,6 +2884,21 @@
   .lg\:text-40 {
     @media (width >= 64rem) {
       font-size: var(--text-40);
+    }
+  }
+  .xl\:mb-\[70px\] {
+    @media (width >= 80rem) {
+      margin-bottom: 70px;
+    }
+  }
+  .xl\:block {
+    @media (width >= 80rem) {
+      display: block;
+    }
+  }
+  .xl\:flex {
+    @media (width >= 80rem) {
+      display: flex;
     }
   }
 }
