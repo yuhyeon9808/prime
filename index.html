@@ -695,12 +695,14 @@
         <!-- 슬라이드 섹션 -->
         <section>
           <!-- Slider main container -->
-          <div class="swiper main-slide w-full h-[700px] mt-[80px]">
+          <div
+            class="swiper main-slide w-full 1440:h-[700px] h-[600px] 1440:mt-[80px] mt-[60px]"
+          >
             <!-- Additional required wrapper -->
-            <div class="swiper-wrapper w-full h-[700px]">
+            <div class="swiper-wrapper w-full 1440:h-[700px] h-[600px]">
               <!-- Slides 1 -->
               <div
-                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_1.png)] bg-cover bg-center"
+                class="swiper-slide w-full 1440:h-[700px] h-[600px] bg-[url(/src/assets/images/slide_bg_1.png)] bg-cover bg-center relative"
               >
                 <div class="slide-inner">
                   <div
@@ -708,7 +710,7 @@
                   >
                     <p class="slide-title">진료는 <br />원칙에서 시작됩니다</p>
                     <hr class="block my-[30px]" />
-                    <p class="leading-9 text-24">
+                    <p class="1440:leading-9 1440:text-24 text-20">
                       불필요한 치료는 하지 않습니다<br />과정과 기준을 지키는
                       프라임 치과
                     </p>
@@ -718,7 +720,7 @@
               </div>
               <!-- Slides 2 -->
               <div
-                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_2.png)] bg-cover bg-center"
+                class="swiper-slide w-full 1440:h-[700px] h-[600px] bg-[url(/src/assets/images/slide_bg_2.png)] bg-cover bg-center relative"
               >
                 <div class="slide-inner">
                   <div
@@ -728,7 +730,7 @@
                       과정이 투명해야<br />결과도 신뢰할 수 있습니다
                     </p>
                     <hr class="block my-[30px]" />
-                    <p class="leading-9 text-24">
+                    <p class="1440:leading-9 1440:text-24 text-20">
                       진단 · 계획 · 치료 · 사후관리<br />모든 단계는 기록되고
                       설명됩니다.
                     </p>
@@ -738,7 +740,7 @@
               </div>
               <!-- Slides 3 -->
               <div
-                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_3.png)] bg-cover bg-center"
+                class="swiper-slide w-full 1440:h-[700px] h-[600px] bg-[url(/src/assets/images/slide_bg_3.png)] bg-cover bg-center relative"
               >
                 <div class="slide-inner">
                   <div
@@ -748,7 +750,7 @@
                       정확한 진단이<br />치료의 기준이 됩니다
                     </p>
                     <hr class="block my-[30px]" />
-                    <p class="leading-9 text-24">
+                    <p class="1440:leading-9 1440:text-24 text-20">
                       정밀 장비와 기준에 따른 진단<br />치료의 시작부터 다른
                       프라임 치과
                     </p>
@@ -758,7 +760,7 @@
               </div>
               <!-- Slides 4 -->
               <div
-                class="swiper-slide w-full h-[700px] bg-[url(/src/assets/images/slide_bg_4.png)] bg-cover bg-center"
+                class="swiper-slide w-full 1440:h-[700px] h-[600px] bg-[url(/src/assets/images/slide_bg_4.png)] bg-cover bg-center relative"
               >
                 <div class="slide-inner">
                   <div
@@ -768,7 +770,7 @@
                       프라임 치과 <br />분야 별 전문 의료진
                     </p>
                     <hr class="block my-[30px]" />
-                    <p class="leading-9 text-24">
+                    <p class="1440:leading-9 1440:text-24 text-20">
                       분야별 전문 의료진이 진단부터<br />치료까지 책임지고
                       함께합니다.
                     </p>
@@ -782,10 +784,16 @@
         </section>
 
         <!-- 시스템 소개 섹션 -->
-        <section class="inner px-[95px] py-[110px]">
-          <div class="mb-[50px]">
-            <span class="text-brand text-20">PRIME PRECISION SYSTEM</span>
-            <p class="text-brand-deep text-40 font-bold leading-12">
+        <section
+          class="1440:w-[1440px] mx-auto w-full 1440:px-[95px] md:px-[50px] px-[20px] 1440:py-[110px] py-[70px]"
+        >
+          <div class="1440:mb-[50px] mb-[30px]">
+            <span class="text-brand 1440:text-20 text-16"
+              >PRIME PRECISION SYSTEM</span
+            >
+            <p
+              class="text-brand-deep 1440:text-40 sm:text-32 text-24 font-semibold 1440:leading-12 leading-10"
+            >
               프라임치과 분야 별<br />정밀 진단 · 치료 시스템
             </p>
           </div>
@@ -797,26 +805,30 @@
               <div
                 class="swiper-slide w-full border border-border-gray rounded-md"
               >
-                <div class="flex">
+                <div class="1440:flex">
                   <img
                     src="/src/assets/images/section2_slide_1.png"
                     alt="3D CT · 디지털 구강 스캐너"
-                    class="w-[632px]"
+                    class="1440:w-[632px] w-full"
                   />
                   <div class="flex-1 flex flex-col justify-center items-center">
-                    <div>
+                    <div class="1440:p-0 sm:p-10 px-5 py-7 max-w-[400px]">
                       <span
-                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        class="text-text-muted font-semibold sm:text-24 text-20 sm:pb-[30px] pb-[15px]"
                         >01</span
                       >
-                      <p class="font-semibold text-32 pb-[10px]">
+                      <p
+                        class="font-semibold 1440:text-32 sm:text-24 text-20 pb-[10px]"
+                      >
                         3D CT · 디지털<br />구강 스캐너
                       </p>
-                      <p class="text-24 text-text-muted pb-[30px]">
-                        3D CT와 디지털 구강 스캐너를 통해<br />치아·턱뼈·신경
-                        위치를 입체적으로 분석합니다.
+                      <p class="m:text-20 text-16 text-text-muted pb-[30px]">
+                        3D CT와 디지털 구강 스캐너를 통해 치아·턱뼈·신경 위치를
+                        입체적으로 분석합니다.
                       </p>
-                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                      <a href="#" class="block 1440:text-24 md:text-20 text-16"
+                        >자세히 보기 &nbsp;→</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -825,26 +837,30 @@
               <div
                 class="swiper-slide w-full border border-border-gray rounded-md"
               >
-                <div class="flex">
+                <div class="1440:flex">
                   <img
                     src="/src/assets/images/section2_slide_2.png"
                     alt="AI 기반 정밀 진단 시스템"
-                    class="w-[632px]"
+                    class="1440:w-[632px] w-full"
                   />
                   <div class="flex-1 flex flex-col justify-center items-center">
-                    <div>
+                    <div class="1440:p-0 sm:p-10 px-5 py-7 max-w-[400px]">
                       <span
-                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        class="text-text-muted font-semibold sm:text-24 text-20 sm:pb-[30px] pb-[15px]"
                         >02</span
                       >
-                      <p class="font-semibold text-32 pb-[10px]">
+                      <p
+                        class="font-semibold 1440:text-32 sm:text-24 text-20 pb-[10px]"
+                      >
                         AI 기반<br />정밀 진단 시스템
                       </p>
-                      <p class="text-24 text-text-muted pb-[30px]">
-                        AI 분석을 통해 교합, 치아 배열, 잇몸 상태를<br />
-                        객관적인 수치로 확인합니다.
+                      <p class="m:text-20 text-16 text-text-muted pb-[30px]">
+                        AI 분석을 통해 교합, 치아 배열, 잇몸 상태를 객관적인
+                        수치로 확인합니다.
                       </p>
-                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                      <a href="#" class="block 1440:text-24 md:text-20 text-16"
+                        >자세히 보기 &nbsp;→</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -853,26 +869,30 @@
               <div
                 class="swiper-slide w-full border border-border-gray rounded-md"
               >
-                <div class="flex">
+                <div class="1440:flex">
                   <img
                     src="/src/assets/images/section2_slide_3.png"
                     alt="치료 전 사전 시뮬레이션"
-                    class="w-[632px]"
+                    class="1440:w-[632px] w-full"
                   />
                   <div class="flex-1 flex flex-col justify-center items-center">
-                    <div>
+                    <div class="1440:p-0 sm:p-10 px-5 py-7 max-w-[400px]">
                       <span
-                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        class="text-text-muted font-semibold sm:text-24 text-20 sm:pb-[30px] pb-[15px]"
                         >03</span
                       >
-                      <p class="font-semibold text-32 pb-[10px]">
+                      <p
+                        class="font-semibold 1440:text-32 sm:text-24 text-20 pb-[10px]"
+                      >
                         치료 전<br />사전 시뮬레이션
                       </p>
-                      <p class="text-24 text-text-muted pb-[30px]">
-                        교정·보철·임플란트 치료 전<br />
-                        디지털 시뮬레이션으로 결과를 예측합니다.
+                      <p class="sm:text-20 text-16 text-text-muted pb-[30px]">
+                        교정·보철·임플란트 치료 전 디지털 시뮬레이션으로 결과를
+                        예측합니다.
                       </p>
-                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                      <a href="#" class="block 1440:text-24 md:text-20 text-16"
+                        >자세히 보기 &nbsp;→</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -881,27 +901,30 @@
               <div
                 class="swiper-slide w-full border border-border-gray rounded-md"
               >
-                <div class="flex">
+                <div class="1440:flex">
                   <img
                     src="/src/assets/images/section2_slide_4.png"
                     alt="단계별 멸균·위생 관리 시스템"
-                    class="w-[632px]"
+                    class="1440:w-[632px] w-full"
                   />
                   <div class="flex-1 flex flex-col justify-center items-center">
-                    <div>
+                    <div class="1440:p-0 sm:p-10 px-5 py-7 max-w-[400px]">
                       <span
-                        class="text-text-muted font-semibold text-24 pb-[30px]"
+                        class="text-text-muted font-semibold sm:text-24 text-20 sm:pb-[30px] pb-[15px]"
                         >04</span
                       >
-                      <p class="font-semibold text-32 pb-[10px]">
+                      <p
+                        class="font-semibold 1440:text-32 sm:text-24 text-20 pb-[10px]"
+                      >
                         단계별<br />멸균·위생 관리 시스템
                       </p>
-                      <p class="text-24 text-text-muted pb-[30px]">
-                        진료 기구는 사용 후 즉시 세척 과정을 거친 뒤
-                        <br />
-                        소독·멸균 시스템을 통해 단계별로 관리됩니다.
+                      <p class="m:text-20 text-16 text-text-muted pb-[30px]">
+                        진료 기구는 사용 후 세척 과정을 거친 뒤 소독·멸균
+                        시스템을 통해 관리됩니다.
                       </p>
-                      <a href="#" class="block text-24">자세히 보기 &nbsp;→</a>
+                      <a href="#" class="block 1440:text-24 md:text-20 text-16"
+                        >자세히 보기 &nbsp;→</a
+                      >
                     </div>
                   </div>
                 </div>
@@ -911,6 +934,96 @@
               <div class="swiper-button-prev system-prev"></div>
               <div class="swiper-button-next system-next"></div>
             </div>
+          </div>
+        </section>
+
+        <!-- 장비 소개 섹션 -->
+        <section
+          class="w-full h-[635px] bg-bg-equipment flex items-center justify-center overflow-hidden relative"
+        >
+          <div class="z-20">
+            <div class="pb-[65px] text-center">
+              <p class="text-36 font-semibold pb-[30px]">
+                프라임 치과의 최첨단 장비
+              </p>
+              <p class="text-text-muted leading-8">
+                대학 병원급 장비로 더 정밀하게 진료합니다. <br />환자분들의 치아
+                건강을 위한 프라임 치과의 자신감입니다.
+              </p>
+            </div>
+
+            <div class="inner">
+              <!-- Slider main container -->
+              <div class="swiper slide-equipment">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                  <!-- Slides -->
+                  <div class="swiper-slide">
+                    <div class="w-[250px] h-[250px] bg-bg/70 rounded-md">
+                      <img
+                        src="/src/assets/images/medical_device_1.png"
+                        alt="프라임 의료 장비"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-[250px] h-[250px] bg-bg/70 rounded-md">
+                      <img
+                        src="/src/assets/images/medical_device_2.png"
+                        alt="프라임 의료 장비"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-[250px] h-[250px] bg-bg/70 rounded-md">
+                      <img
+                        src="/src/assets/images/medical_device_3.png"
+                        alt="프라임 의료 장비"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-[250px] h-[250px] bg-bg/70 rounded-md">
+                      <img
+                        src="/src/assets/images/medical_device_4.png"
+                        alt="프라임 의료 장비"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-[250px] h-[250px] bg-bg/70 rounded-md">
+                      <img
+                        src="/src/assets/images/medical_device_5.png"
+                        alt="프라임 의료 장비"
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="w-[250px] h-[250px] bg-bg/70 rounded-md">
+                      <img
+                        src="/src/assets/images/medical_device_6.png"
+                        alt="프라임 의료 장비"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 배경 -->
+          <div
+            class="absolute inset-0 z-10 pointer-events-none blur-[4px] top-0"
+          >
+            <p
+              class="text-[128px] text-[#D3D3D3]/30 font-bold whitespace-nowrap absolute top-[-60px] left-0"
+            >
+              PRIME DENTAL
+            </p>
+            <p
+              class="text-[128px] text-[#D3D3D3]/30 font-bold whitespace-nowrap absolute bottom-[-60px] right-0"
+            >
+              PRIME DENTAL
+            </p>
           </div>
         </section>
       </main>

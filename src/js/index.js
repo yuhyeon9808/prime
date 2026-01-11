@@ -12,12 +12,37 @@ const swiper = new Swiper('.main-slide', {
 
 // 시스템 슬라이드
 const systemSwiper = new Swiper('.system-slide', {
-  autoplay: {
-    delay: 5000,
-  },
+  // autoplay: {
+  //   delay: 5000,
+  // },
 
   navigation: {
     nextEl: '.system-next',
     prevEl: '.system-prev',
+  },
+
+  breakpoints: {
+    768: {
+      slidesPerView: 1,
+    },
+
+    1439: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+
+    1440: {
+      slidesPerView: 1,
+    },
+  },
+});
+
+// 장비 슬라이드
+const equipmentSwiper = new Swiper('.slide-equipment', {
+  slidesPerView: 5,
+  loop: true,
+  spaceBetween: 40,
+  autoplay: {
+    delay: 1000,
   },
 });

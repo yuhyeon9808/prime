@@ -29,9 +29,11 @@
   --font-ibm: 'IBM Plex Sans', sans-serif;
 
   --text-40: 40px;
+  --text-36: 36px;
   --text-32: 32px;
   --text-24: 24px;
   --text-20: 20px;
+  --text-16: 16px;
 
   /* 디자인 기준 */
   --spacing-1440: 1440px;
@@ -42,25 +44,59 @@ body {
   background-color: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-ibm);
+  word-break: keep-all;
 }
 
 @layer components {
   /* slide components */
   .slide-title {
-    @apply text-40 font-semibold;
+    /* 1. 기본 스타일 */
+    @apply text-24 font-semibold;
+
+    /* 2. 중간 크기 (md: 768px~): */
+    @media (min-width: 768px) {
+      @apply text-32 font-semibold;
+    }
+
+    /* 3. 1440px 이상 */
+    @media (min-width: 1440px) {
+      @apply text-40 font-semibold;
+    }
+  }
+}
+
+.link-btn {
+  /* 1. 기본 스타일 */
+  @apply block mt-[25px] text-end font-semibold text-16;
+
+  /* 2. 중간 크기 (md: 768px~): */
+  @media (min-width: 768px) {
+    @apply block mt-[30px] text-end font-semibold text-16;
   }
 
-  .link-btn {
+  /* 3. 1440px 이상 */
+  @media (min-width: 1440px) {
     @apply block mt-[45px] text-end font-semibold text-20;
   }
+}
 
-  /* width components */
-  .inner {
-    @apply w-1440 mx-auto;
+/* width components */
+.inner {
+  @apply w-1440 mx-auto;
+}
+
+.slide-inner {
+  /* 1. 기본 스타일 */
+  @apply flex justify-center;
+
+  /* 2. 중간 크기 (md: 768px~): */
+  @media (min-width: 768px) {
+    @apply block ml-[50px];
   }
 
-  .slide-inner {
-    @apply w-1440 mx-auto pl-[183px];
+  /* 3. 1440px 이상 */
+  @media (min-width: 1440px) {
+    @apply max-w-1440 mx-auto pl-[183px] ml-auto;
   }
 }
 
