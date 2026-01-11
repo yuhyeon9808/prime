@@ -2618,6 +2618,11 @@
       font-size: var(--text-32);
     }
   }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:px-\[50px\] {
     @media (width >= 48rem) {
       padding-inline: 50px;
@@ -2626,6 +2631,21 @@
   .md\:text-20 {
     @media (width >= 48rem) {
       font-size: var(--text-20);
+    }
+  }
+  .lg\:flex {
+    @media (width >= 64rem) {
+      display: flex;
+    }
+  }
+  .lg\:w-\[632px\] {
+    @media (width >= 64rem) {
+      width: 632px;
+    }
+  }
+  .lg\:max-w-\[632px\] {
+    @media (width >= 64rem) {
+      max-width: 632px;
     }
   }
 }
