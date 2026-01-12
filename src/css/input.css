@@ -137,3 +137,13 @@ body {
 .tap-btn.active {
   @apply bg-brand text-bg;
 }
+
+@media (min-height: 850px) {
+  .bar {
+    display: flex;
+  }
+}
+
+.bar.menu-open {
+  display: none;
+}

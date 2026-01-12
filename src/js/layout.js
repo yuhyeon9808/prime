@@ -25,3 +25,14 @@ menu.forEach((target) => {
     }
   });
 });
+
+//사이드바 없어지게
+const bar = document.querySelector('.bar');
+const header = document.querySelector('header');
+header.addEventListener('mouseenter', () => {
+  bar.classList.add('menu-open');
+});
+
+header.addEventListener('mouseleave', () => {
+  bar.classList.remove('menu-open');
+});
