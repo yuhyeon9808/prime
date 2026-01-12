@@ -951,12 +951,6 @@
   .w-1440 {
     width: var(--spacing-1440);
   }
-  .w-\[225px\] {
-    width: 225px;
-  }
-  .w-\[250px\] {
-    width: 250px;
-  }
   .w-\[1000px\] {
     width: 1000px;
   }
@@ -965,6 +959,12 @@
   }
   .w-\[150px\] {
     width: 150px;
+  }
+  .w-\[225px\] {
+    width: 225px;
+  }
+  .w-\[250px\] {
+    width: 250px;
   }
   .w-\[300px\] {
     width: 300px;
@@ -980,9 +980,6 @@
   }
   .max-w-\[350px\] {
     max-width: 350px;
-  }
-  .max-w-\[400px\] {
-    max-width: 400px;
   }
   .max-w-\[440px\] {
     max-width: 440px;
@@ -2840,14 +2837,24 @@
       font-size: var(--text-32);
     }
   }
-  .lg\:flex {
+  .lg\:min-w-0 {
     @media (width >= 64rem) {
-      display: flex;
+      min-width: calc(var(--spacing) * 0);
     }
   }
-  .lg\:max-w-\[632px\] {
+  .lg\:flex-\[0_0_430px\] {
     @media (width >= 64rem) {
-      max-width: 632px;
+      flex: 0 0 430px;
+    }
+  }
+  .lg\:flex-\[0_1_632px\] {
+    @media (width >= 64rem) {
+      flex: 0 1 632px;
+    }
+  }
+  .lg\:shrink-0 {
+    @media (width >= 64rem) {
+      flex-shrink: 0;
     }
   }
   .lg\:grid-cols-4 {
@@ -3042,7 +3049,10 @@ body {
   background-color: var(--color-brand);
   color: var(--color-bg);
 }
-@media (min-height: 850px) {
+.bar {
+  display: none;
+}
+@media (min-width: 1440px) and (min-height: 850px) {
   .bar {
     display: flex;
   }
